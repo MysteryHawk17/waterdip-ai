@@ -9,7 +9,7 @@ export default function CountryBarChart({ data }: CountryBarChartProps) {
   const options: ApexOptions = {
     series: [
       {
-        name: "Inflation",
+        name: "Visitor",
         data: data.map((item) => item.visitors),
       },
     ],
@@ -71,17 +71,7 @@ export default function CountryBarChart({ data }: CountryBarChartProps) {
         formatter: (val: number) => `${val}%`,
       },
     },
-    title: {
-      text: "Monthly Inflation in Argentina, 2002",
-      floating: true,
-      offsetY: 330,
-      align: "center",
-      style: {
-        color: "#444",
-      },
-    },
   };
-
   return (
     <ApexChart
       options={options}
