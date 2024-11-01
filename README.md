@@ -57,10 +57,26 @@ To run this project locally, follow these steps:
 4. Start the development server:
 
    ```bash
-   npm run dev 
+   npm run dev
    ```
 
 5. Open your browser and navigate to `http://localhost:5173` to view the application. Also view it on local network by navigating to `http://<your-ip>:5173`
+
+## Testing
+
+It uses vitest for testing. All the test files can be found under the tests folder into the root directory of the project.
+
+To run the tests, use the following command:
+
+```bash
+npm run test
+```
+
+Additionally, you can run the tests with vitest ui by using the following command:
+
+```bash
+npm run test:ui
+```
 
 ## Usage
 
@@ -76,4 +92,3 @@ Contributions are welcome! If you have suggestions for improvements or new featu
 3. Commit your changes: `git commit -m 'Add some amazing feature'`
 4. Push to the branch: `git push origin feature/AmazingFeature`
 5. Open a pull request.
-
